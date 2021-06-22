@@ -1,0 +1,22 @@
+//顺序表的定义
+//静态分布
+#define MaxSize 50
+typedef struct{
+    Elemtype data [MaxSize];
+    int length;
+}SqList;
+
+
+//动态分布
+#define InitSize 10
+typedef struct{
+	ElemType *data;
+	int MaxSize, length;
+}SeqList;
+
+//顺序表的插入
+bool ListInsert（SeqList &L，int i，ElemType e）{
+    if(i<1||i<L.length+1)
+        return false;
+
+}
