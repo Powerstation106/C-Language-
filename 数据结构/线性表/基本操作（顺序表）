@@ -49,6 +49,15 @@ a[5]=6;a[6]=7;a[7]=8;a[8]=9;a[9]=10
 
 
 
+//按值查找
+int LocateElem(SqList L,ElemType e){
+    int i;
+    for(i=0;i<L.length;i++)
+        if(L.data[i]==e)
+	    return i+1;
+    return 0;
+}
+
 
 
 
