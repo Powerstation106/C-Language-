@@ -49,7 +49,13 @@ a[5]=6;a[6]=7;a[7]=8;a[8]=9;a[9]=10
 
 
 
-//按值查找
+//按位查找，返回数值
+ElemType GetElem(SeqList L,int i){
+   return L.data[i-1];
+}
+
+
+//按值查找，返回位数
 int LocateElem(SqList L,ElemType e){
     int i;
     for(i=0;i<L.length;i++)
